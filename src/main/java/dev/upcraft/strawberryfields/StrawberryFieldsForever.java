@@ -1,5 +1,6 @@
 package dev.upcraft.strawberryfields;
 
+import dev.upcraft.strawberryfields.world.gen.SFWorldgen;
 import io.github.glasspane.mesh.api.annotation.CalledByReflection;
 import io.github.glasspane.mesh.api.logging.MeshLoggerFactory;
 import net.fabricmc.api.ModInitializer;
@@ -14,6 +15,7 @@ public class StrawberryFieldsForever implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        SFWorldgen.init();
     }
 
     public static Logger getLogger() {

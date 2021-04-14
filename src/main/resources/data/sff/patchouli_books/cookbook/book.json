@@ -1,0 +1,9 @@
+{
+  "__comment": "see https://github.com/Vazkii/Patchouli/wiki/Book-JSON-Format",
+  "name": "book.sff.cookbook.name",
+  "landing_text": "book.sff.cookbook.landing_text",
+  "version": 1,
+  "book_texture": "patchouli:textures/gui/book_purple.png",
+  "model": "patchouli:book_purple",
+  "show_toasts": false
+}
