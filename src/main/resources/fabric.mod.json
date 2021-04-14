@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "sff",
+  "name": "Strawberry Fields Forever",
+  "description": "",
+  "license": "https://github.com/cybercat5555/strawberry-fields-forever-fabric/blob/1.16/LICENSE.md",
+  "authors": [
+    {
+      "name": "UpcraftLP",
+      "contact": {
+        "github": "UpcraftLP",
+        "homepage": "https://upcraft.dev",
+        "twitter": "@UpcraftLP"
+      }
+    }
+  ],
+  "contact": {
+    "sources": "https://github.com/cybercat5555/strawberry-fields-forever-fabric",
+    "issues": "https://github.com/cybercat5555/strawberry-fields-forever-fabric/issues"
+  },
+  "icon": "assets/sff/icon.png",
+  "environment": "*",
+  "version": "${version}",
+  "depends": {
+    "fabric": ">=0.32.5-0",
+    "mesh": ">=0.9.0-0",
+    "fabricloader": "^0.11.0",
+    "minecraft": "~1.16.0-0"
+  },
+  "entrypoints": {
+    "main": [
+      "dev.upcraft.strawberryfields.StrawberryFieldsForever"
+    ]
+  }
+}
