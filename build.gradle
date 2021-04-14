@@ -35,6 +35,9 @@ repositories {
         url = "https://maven.shedaniel.me"
     }
     maven {
+        url = "https://maven.blamejared.com"
+    }
+    maven {
         name = "JitPack"
         url = "https://jitpack.io"
     }
@@ -54,8 +57,7 @@ dependencies {
     compileOnly "org.jetbrains:annotations:${project.jetbrains_annotations_version}"
 
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.fabric_version}")
-
-    modRuntime("me.shedaniel:RoughlyEnoughItems:${project.rei_version}")
+    modImplementation include("vazkii.patchouli:Patchouli:${project.patchouli_version}")
 
     modImplementation(include("io.github.GlassPane:Mesh:${project.mesh_version}")) {
         transitive = false
@@ -74,6 +76,7 @@ dependencies {
     }
     modRuntime("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_version}")
 
+    modRuntime("me.shedaniel:RoughlyEnoughItems:${project.rei_version}")
     modRuntime "com.terraformersmc:modmenu:${project.modmenu_version}"
 }
 
